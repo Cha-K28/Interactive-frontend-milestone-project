@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<title>EV Charging Points</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -11,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" type="text/css" />
 
     <link rel="stylesheet" href="CSS/style.css" type="text/css" />
-    <title>EV Charging Points</title>
+              
+    
 </head>
 
 <body>
@@ -73,13 +75,13 @@
 
 
 
-                    <div class="col-md-4">
-                        <form>
-                            <input type="text" name="first_name" placeholder="First Name" />
-                            <input type="text" name="surname" placeholder="Surname" />
-                            <input type="email" name="email" placeholder="email address">
-                            <textarea placeholder="Leave us a message here"></textarea>
-                            <input type="submit" value="Send" />
+                    <div class= "col-md-4">
+                        <form onsubmit="return sendMail(this);">
+                            <input type="text" id="full_name" name="full_name" placeholder="Full Name" />
+                            <input type="email"  id="from_email" name="from_email" placeholder="email address">
+                            <input type="text" id="car" name="car" placeholder="What car are you interested in?" />
+                            <textarea type="text" id="message" name="message" placeholder="What would you like to know?"></textarea>
+                            <button type="submit">Send</button>
                         </form>
                     </div>
 
@@ -133,6 +135,10 @@
 
 
     <!-- End footer -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+ <script src="JS/contact.js"></script>
 
 </body>
 
