@@ -79,6 +79,12 @@ h4 {
 
 }
 
+#charger_data {
+
+    border: 5px solid green;
+    height: 500px;
+    width: auto;
+}
 /*----------------------------------------------------- images */
 
 img {
