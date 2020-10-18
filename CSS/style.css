@@ -79,12 +79,12 @@ h4 {
 
 }
 
-#charger_data {
-
-    border: 5px solid green;
+/*--------------------------------------------Map*/
+#map {
+    min-height: 360px;
     height: 500px;
-    width: auto;
 }
+
 /*----------------------------------------------------- images */
 
 img {
