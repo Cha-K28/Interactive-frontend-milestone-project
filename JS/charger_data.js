@@ -1,3 +1,8 @@
+const labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+    
+var locations = [];
+
+
 function getData(cb) {
 
     var xhr = new XMLHttpRequest();
@@ -13,8 +18,6 @@ function getData(cb) {
             }
         };    
 };
-    
-var locations = [];
 
 
 getData(function(data) {
@@ -37,6 +40,7 @@ function initMap() {
     var markers = locations.map(function(location, i) {
         return new google.maps.Marker({
             position: location,
+            label: labels[i % labels.length],
         });
     });
 

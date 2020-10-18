@@ -83,6 +83,7 @@ h4 {
 #map {
     min-height: 360px;
     height: 500px;
+    border-bottom: #222222 5px solid;
 }
 
 /*----------------------------------------------------- images */
