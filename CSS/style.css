@@ -146,8 +146,8 @@ p {
 }
 
 
-button {
-    width: 200px;
+#enter_button {
+    width: 150px;
     height: 30px;
     display: block;
     margin-left: auto;

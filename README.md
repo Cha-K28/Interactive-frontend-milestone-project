@@ -86,32 +86,42 @@ EmailJS: https://www.emailjs.com/
 
 
 ## Testing
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+The site was thoroughly tested on various different devices and browsers. Chrome, Safari, Firefox on Mac and PC. Also worked on both Iphone and Android. 
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+Most importantly, the map worked as it should.
 
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+The site works fine on both mobile and laptops. It was also tested on a larger 22 inch monitor. The media quiries also work as they should.
+
+### Issues 
+
+Contact Form: 
+1. A message can be submitted even if every field is left blank. Unfurtunatley with time restraints i couldn ammend this. 
+2. After clicking ok on the sucess message the site should return to its home page. This does not yet work, instead we get a 404 error. 
+
+
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
 
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+Deploying the website was quite simple as I used Github Pages. The steps to do this were as follows
+
+1. push to github
+2. Open Repo on github
+3. click on settings
+4. Make sure Repo is public
+5. Scroll down to github pages
+
+Following Deployment, It took over an hour for the page to work. once it worked i sent it to may friends and family to test it. 
+
+One issue i had was that after i sent a message using the contact form, it did not return to the home page as it should. This appeared to be just a delay in the deployment.
+
+Everything else worked as it should, most importantly the map.
+
 
 ## Credits
 
@@ -137,7 +147,7 @@ All pictures used came from google searches.
 
 ## Acknowledgements
 
-1. The code institute tutor team who helped me at many stages throughout this project. 
+1. The code institute tutor team who helped me at many stages throughout this project particularly when i had difficulties with displaying markers. 
 2. The idea came from my work, as i was recently researching electric vehicles. 
 3. The IT team at work who took time out of their busy days to give me advice anytime i asked. 
 4. To Gerry, my mentor for his wonderful guidance and advice through out the project. 
