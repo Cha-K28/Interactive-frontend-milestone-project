@@ -1,8 +1,13 @@
-README.md
+# README.md
 
-ChargingPoint. 
+# ChargingPoint. 
 
-As somone who is very interested in modern cars, i am very aware  of the latestest technologies emerging in cars, be it the latest ADAS feature or the latest power units, primarily electric Power units. 
+This website was created for two reasons. 
+
+1. For those who have an electric car and want to find out where they can charge it in Ireland. 
+2. For those who know nothing about electric cars but might be interested in switching form a traditional petrol or diesel. 
+
+
 When your interested in a topic like this its no effort to find out any information you wish. However, what if your not remotely interested in cars? what if you just want to get from A to B and want to get there 
 without harming the environment. Thats where an electric car comes in. 
 
@@ -13,11 +18,11 @@ is.
 Thats where this website comes in. Simply bookmark this site and and you have can find a charging point with just a few clicks or taps. Plan your trip and where you want to charge or, wait untill you arive at your destination
 and find your nearest charging point then. 
 
-I though it was key to create a website that is simple and usable. The websites main function is to allow users to locate a charging point, using a large map on the home page, but also give information on different electric vehicles for those 
+It was key to create a website that is simple and usable. The websites main function is to allow users to locate a charging point, using a large map on the home page, but also give information on different electric vehicles for those 
 who may be unsure about what electric vehicle to buy. There is also a contact page where a user can send a message requesting further information on a particular EV. 
 
 
-UX
+# UX
 
 This website can be used by anyone. It serves many different functions. 
 
@@ -34,30 +39,53 @@ displayed on the examples page or any other EV.
 The entire website is laid out in an easy to use way so that anybody can navigate it. 
 
 
-Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+# Features
 
-Existing Features
+The first first and most important feature of this website is the map on the home page displaying the locations of electric vehicle chargers around Ireland.
+this allows the user to easily find their closest Charger. It also contains clusters so its much easier to locate a charger. this will be even more important as more chargers are added. 
 
-The first feature on this website is the interactive map that shows the locations of charging points. The locations of the charge points were aquied using a free APi
+The second interactive feature is the contact form on the contact page. If a user enters their name, email, the car they want further information on and a short message, an email will be sent.
+a message will then appear to tell the user that the email has been sent. this contact page is accesible from both the nav bar at the top of the page and from the footer. 
 
-
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-Features Left to Implement
-Another feature idea
-Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-JQuery
-The project uses JQuery to simplify DOM manipulation.
+The examples page is a simple informative page that gives the user some information about some Electric Vehicles available in Ireland. 
 
 
-Testing
+### Features Left to Implement
+
+This website could also incude many more features. Embedded videos of EV reviews one one thing that could really improve the user expeirence. A second feature that would be very benifitial to the user 
+is a comparison tool that can compare the specifications of two Electric Vehicles.
+
+
+## Technologies Used
+
+Bootstrap : "https://getbootstrap.com/docs/4.4/getting-started/introduction/"
+
+- Bootstrap is used for the nav bar aswell as the layout by using the container class and rows. An example of where bootstrap is used is the form.
+
+Google Fonts: "https://fonts.google.com/"
+
+- Google fonts was use to style the fonts used throughout the website.
+
+Font Awesome: "https://fontawesome.com/"
+
+- Font awsome was used for the icons on the website.
+
+W3schools: "https://www.w3schools.com/css/default.asp"
+
+- I used W3 schools at various stages of the project to help me understand some of Javascript, CSS and HTML.
+
+Google Maps Tutorials: https://developers.google.com/maps/documentation/javascript/overview
+
+- I used google maps tutorials to help me render the map and implement the markers. 
+
+EmailJS: https://www.emailjs.com/
+
+- EmailJS is used to power the emails sent fom the contact form on the contact page. 
+
+
+
+
+## Testing
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
 Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
@@ -75,7 +103,7 @@ You should also mention in this section any interesting bugs or problems you dis
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-Deployment
+## Deployment
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
 In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
@@ -85,10 +113,31 @@ Different configuration files?
 Separate git branch?
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
-Credits
-Content
-The text for section Y was copied from the Wikipedia article Z
-Media
-The photos used in this site were obtained from ...
-Acknowledgements
-I received inspiration for this project from X
+## Credits
+
+### Charger location Data
+
+API - https://api.openchargemap.io/v3/poi/?output=json&countrycode=IE&maxresults=2
+
+### Content: 
+
+EV Examples Content - all this Content was written by myself.
+
+### Media:
+
+All pictures used came from google searches. 
+
+1. VW ID3 image: https://s3-eu-west-1.amazonaws.com/carsireland.ie.review/review/wp-content/uploads/2020/06/17163408/Volkswagen-ID.3.jpg
+2. Tesla Model 3: https://www.irishtimes.com/polopoly_fs/1.4099847.1575061040!/image/image.jpg_gen/derivatives/box_620_330/image.jpg
+3. Nissan Leaf: https://www.completecar.ie/img/testdrives/8128_large.jpg
+4. Hyundai Kona: https://www.topgear.com/sites/default/files/styles/fit_1960x1102/public/cars-car/carousel/2017/10/all-new_hyundai_kona_30.jpg?itok=vIktRgvL
+5. BME 330e: https://s3-eu-west-1.amazonaws.com/carsireland.ie.review/review/wp-content/uploads/2020/03/21032115/2020-03-21_lif_57750141_I1.jpg
+6. Charge Point banner:  https://thumbs.dreamstime.com/z/charging-point-illustration-vector-ev-charge-banner-simple-thin-line-style-concept-horizontal-142377040.jpg
+
+
+## Acknowledgements
+
+1. The code institute tutor team who helped me at many stages throughout this project. 
+2. The idea came from my work, as i was recently researching electric vehicles. 
+3. The IT team at work who took time out of their busy days to give me advice anytime i asked. 
+4. To Gerry, my mentor for his wonderful guidance and advice through out the project. 

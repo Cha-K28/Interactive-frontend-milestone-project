@@ -28,7 +28,7 @@ getData(function(data) {
         var loc = {};  // create the object called 'loc'
         loc["lat"] = data[index]['AddressInfo']['Latitude'];  // assign {'lat':} for loc-Object
         loc["lng"] = data[index]['AddressInfo']['Longitude'];  // assign {'lng':} for loc-Object
-        loc["town"] = data[index]['AddressInfo']['Town'];
+        loc["town"] = data[index]['AddressInfo']['Town']; // used in the info window
         locations.push(loc);  // push loc-Object into locations-array
     }
     initMap();
