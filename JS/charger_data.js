@@ -2,6 +2,7 @@
 var locations = [];
 
 
+// This is method is used to call API to get charging points in JSON format
 function getData(cb) {
 
     var xhr = new XMLHttpRequest();
@@ -12,7 +13,9 @@ function getData(cb) {
 
 
         xhr.onreadystatechange = function() {
+            // If success 
             if(this.readyState == 4 && this.status == 200) {
+                // Parse response into JSON format
                 cb(JSON.parse(this.response));        
             }
         };    
@@ -31,12 +34,14 @@ getData(function(data) {
     initMap();
 });
 
+// Render map
 function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 53.361838, lng: -7.654365 },
+        center: { lat: 53.361838, lng: -7.654365 }, // Center of Ireland
         zoom: 6.5,
     });
 
+    // Display charging point markers on map
     var markers = locations.map(function(location, i) {
         const infowindow = new google.maps.InfoWindow({
             content: location.town,
@@ -44,7 +49,7 @@ function initMap() {
         let mark =  new google.maps.Marker({
             position: location,
         });
-
+        // Handle click event
         mark.addListener("click", () => {
             infowindow.open(map, mark);
         });
@@ -52,7 +57,7 @@ function initMap() {
         return mark;
     });
 
-    
+    // import google code
     var markerCluser = new MarkerClusterer(map, markers, {
         imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });              
