@@ -1,21 +1,47 @@
 README.md
-Your Project's Name
-One or two paragraphs providing an overview of your project.
 
-Essentially, this part is your sales pitch.
+ChargingPoint. 
+
+As somone who is very interested in modern cars, i am very aware  of the latestest technologies emerging in cars, be it the latest ADAS feature or the latest power units, primarily electric Power units. 
+When your interested in a topic like this its no effort to find out any information you wish. However, what if your not remotely interested in cars? what if you just want to get from A to B and want to get there 
+without harming the environment. Thats where an electric car comes in. 
+
+The problem with electric cars is that you have to charge them. As someone whos is interested in electric cars, I am constantly noticing new charing points popping up around the country. Again, unless you are interested
+this, you wont notice them. They'll blend into the background just like a parking meter. And that will cause a serious problem when you only have two kilometers of range left and no idea where your nearest charging point
+is. 
+
+Thats where this website comes in. Simply bookmark this site and and you have can find a charging point with just a few clicks or taps. Plan your trip and where you want to charge or, wait untill you arive at your destination
+and find your nearest charging point then. 
+
+I though it was key to create a website that is simple and usable. The websites main function is to allow users to locate a charging point, using a large map on the home page, but also give information on different electric vehicles for those 
+who may be unsure about what electric vehicle to buy. There is also a contact page where a user can send a message requesting further information on a particular EV. 
+
 
 UX
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+This website can be used by anyone. It serves many different functions. 
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+The Main use for this website is to help the user locate an Electric Vehicle charging station. This is achived once you open the site and are greeting with a lrge map showing the locations of charging points around Ireland. 
+This map is ideal for any website user, from someone who already owns an EV and is away from home but needs to locate their nearest charger, down to someone who is thinking of going electric and wants to find out where thier local 
+charging station is. 
+
+The second use for the website is for information. There is a page with different examples of electric cars currently availabe in Ireland. Again, this is ideal for sombody lokking to upgrade thier current EV or
+sombody who is looking to but their first EV and wants to find out whats on the market. 
+
+The third and final function of the website is again to aquire information about EVs. By using a contact form on the contact page the user can send a message with a request for further information about any of the vehicles
+displayed on the examples page or any other EV. 
+
+The entire website is laid out in an easy to use way so that anybody can navigate it. 
+
 
 Features
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 Existing Features
+
+The first feature on this website is the interactive map that shows the locations of charging points. The locations of the charge points were aquied using a free APi
+
+
 Feature 1 - allows users X to achieve Y, by having them fill out Z
 ...
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
@@ -29,6 +55,8 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 JQuery
 The project uses JQuery to simplify DOM manipulation.
+
+
 Testing
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 

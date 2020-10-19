@@ -1,5 +1,4 @@
-const labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-    
+   
 var locations = [];
 
 
@@ -26,6 +25,7 @@ getData(function(data) {
         var loc = {};  // create the object called 'loc'
         loc["lat"] = data[index]['AddressInfo']['Latitude'];  // assign {'lat':} for loc-Object
         loc["lng"] = data[index]['AddressInfo']['Longitude'];  // assign {'lng':} for loc-Object
+        loc["town"] = data[index]['AddressInfo']['Town'];
         locations.push(loc);  // push loc-Object into locations-array
     }
     initMap();
@@ -38,10 +38,18 @@ function initMap() {
     });
 
     var markers = locations.map(function(location, i) {
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length],
+        const infowindow = new google.maps.InfoWindow({
+            content: location.town,
         });
+        let mark =  new google.maps.Marker({
+            position: location,
+        });
+
+        mark.addListener("click", () => {
+            infowindow.open(map, mark);
+        });
+
+        return mark;
     });
 
     

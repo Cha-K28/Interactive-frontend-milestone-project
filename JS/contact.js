@@ -8,10 +8,11 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
-            console.log("SUCCESS", response);
+            alert('Message Sent!');
+            window.location.replace("/");
         },
         function(error) {
-            console.log("FAILED", error);
+            alert('Error: Please try again!');
         }
     );
     return false;
