@@ -12,7 +12,7 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             alert('Message Sent!');
-            window.location.replace("cha-k28.github.io/Interactive-frontend-milestone-project/"); // Return to home page
+            window.location.replace("https://cha-k28.github.io/Interactive-frontend-milestone-project/"); // Return to home page
         },
         function(error) {
             alert('Error: Please try again!');
