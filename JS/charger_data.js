@@ -5,7 +5,7 @@ var locations = [];
 // This is method is used to call API to get charging points in JSON format
 function getData(cb) {
 
-    var xhr = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest(); // sourced from  interactive mini project
 
 
         xhr.open("GET", "https://api.openchargemap.io/v3/poi/?output=json&countrycode=IE");
@@ -23,7 +23,7 @@ function getData(cb) {
 
 
 getData(function(data) {
-    // loop through and add to array [{lat: 54.508650, lng: -1.353513}, {lat: 54.508650, lng: -1.353513}, {lat: 54.508650, lng: -1.353513}]
+
     for(var index in data){
         var loc = {};  // create the object called 'loc'
         loc["lat"] = data[index]['AddressInfo']['Latitude'];  // assign {'lat':} for loc-Object
@@ -33,15 +33,16 @@ getData(function(data) {
     }
     initMap();
 });
-
-// Render map
+// Render map 
+// sourced from google maps api tutorials
 function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: 53.361838, lng: -7.654365 }, // Center of Ireland
         zoom: 6.5,
     });
 
-    // Display charging point markers on map
+    // Display charging point markers on map 
+    // sourced from google maps api tutorials
     var markers = locations.map(function(location, i) {
         const infowindow = new google.maps.InfoWindow({
             content: location.town,
@@ -57,7 +58,7 @@ function initMap() {
         return mark;
     });
 
-    // import google code
+    
     var markerCluser = new MarkerClusterer(map, markers, {
         imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });              

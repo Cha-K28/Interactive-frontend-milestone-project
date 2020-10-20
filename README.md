@@ -91,19 +91,25 @@ The site was thoroughly tested on various different devices and browsers. Chrome
 
 Most importantly, the map worked as it should.
 
-The site works fine on both mobile and laptops. It was also tested on a larger 22 inch monitor. The media quiries also work as they should.
+The site works fine on both mobile and laptops. 
+
+Phone Screen sizes varied from Iphone 5/SE to Iphone 11. 
+
+Laptop screen sizes included 13" and 15.6".  It was also tested on a larger 22" monitor. The media quiries also work as they should.
+
+IT was tested using both chrome dev tools and actual devices. 
+
+I also sent it to friends and family for user testing. 
 
 ### Issues 
 
 Contact Form: 
 1. A message can be submitted even if every field is left blank. Unfurtunatley with time restraints i couldn ammend this. 
-2. After clicking ok on the sucess message the site should return to its home page. This does not yet work, instead we get a 404 error. 
+2. After clicking ok on the sucess message the site should return to its home page. This does not yet work, instead we get a 404 error. Strangley this worked fine when testing in Gitpod.
 
+Map:
+1. The zoom icons, the toggle full scrren icon and the street view icon are missing. This may be a google issue. 
 
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
 
@@ -118,7 +124,7 @@ Deploying the website was quite simple as I used Github Pages. The steps to do t
 
 Following Deployment, It took over an hour for the page to work. once it worked i sent it to may friends and family to test it. 
 
-One issue i had was that after i sent a message using the contact form, it did not return to the home page as it should. This appeared to be just a delay in the deployment.
+One issue i had was that after i sent a message using the contact form, it did not return to the home page as it should. Strangley this worked fine when testing in Gitpod..
 
 Everything else worked as it should, most importantly the map.
 
@@ -127,7 +133,7 @@ Everything else worked as it should, most importantly the map.
 
 ### Charger location Data
 
-API - https://api.openchargemap.io/v3/poi/?output=json&countrycode=IE&maxresults=2
+Charger location Data API - https://api.openchargemap.io/v3/poi/?output=json&countrycode=IE&maxresults=2
 
 ### Content: 
 
@@ -149,5 +155,5 @@ All pictures used came from google searches.
 
 1. The code institute tutor team who helped me at many stages throughout this project particularly when i had difficulties with displaying markers. 
 2. The idea came from my work, as i was recently researching electric vehicles. 
-3. The IT team at work who took time out of their busy days to give me advice anytime i asked. 
-4. To Gerry, my mentor for his wonderful guidance and advice through out the project. 
+3. The IT team at work who took time out of their busy days to give me advice anytime I asked. 
+4. To Gerry, my mentor, for his wonderful guidance and advice throughout the project. 
