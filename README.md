@@ -24,7 +24,7 @@ who may be unsure about what electric vehicle to buy. There is also a contact pa
 
 # UX
 
-This website can be used by anyone. It serves many different functions. 
+This website can be used by **anyone**. It serves many different functions. 
 
 The Main use for this website is to help the user locate an Electric Vehicle charging station. This is achived once you open the site and are greeting with a lrge map showing the locations of charging points around Ireland. 
 This map is ideal for any website user, from someone who already owns an EV and is away from home but needs to locate their nearest charger, down to someone who is thinking of going electric and wants to find out where thier local 
@@ -42,7 +42,8 @@ The entire website is laid out in an easy to use way so that anybody can navigat
 # Features
 
 The first first and most important feature of this website is the map on the home page displaying the locations of electric vehicle chargers around Ireland.
-this allows the user to easily find their closest Charger. It also contains clusters so its much easier to locate a charger. this will be even more important as more chargers are added. 
+this allows the user to easily find their closest Charger. It also contains clusters so its much easier to locate a charger. This will be even more important as more chargers are added.
+Also if you click the marker on the map, the name of the town will appear. 
 
 The second interactive feature is the contact form on the contact page. If a user enters their name, email, the car they want further information on and a short message, an email will be sent.
 a message will then appear to tell the user that the email has been sent. this contact page is accesible from both the nav bar at the top of the page and from the footer. 
@@ -104,8 +105,9 @@ I also sent it to friends and family for user testing.
 ### Issues 
 
 Contact Form: 
-1. A message can be submitted even if every field is left blank. Unfurtunatley with time restraints i couldn ammend this. 
-2. After clicking ok on the sucess message the site should return to its home page. This does not yet work, instead we get a 404 error. Strangley this worked fine when testing in Gitpod.
+1. A message can be submitted even if every field is left blank. This was fixed by adding required to the email input field. 
+2. After clicking ok on the sucess message the site should return to its home page. It didnt do this originally. I solved it by inserting
+the correct URL.
 
 Map:
 1. The zoom icons, the toggle full scrren icon and the street view icon are missing. This may be a google issue. 
